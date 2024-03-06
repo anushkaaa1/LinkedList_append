@@ -41,6 +41,7 @@ public class linkedllastnode {
         tail.next = head;
         head  =temp.next;
         temp.next = null;
+        tail = temp;
     }
     public static void main(String args[]){
         linkedllastnode l = new linkedllastnode();
@@ -54,5 +55,6 @@ public class linkedllastnode {
         System.out.println();
         l.lasttobeg(3);
         l.print(l.head);
+        
     }
 }
